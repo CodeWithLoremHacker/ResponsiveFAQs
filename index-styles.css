@@ -1,0 +1,139 @@
+/* Google font*/
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300..1000&display=swap');
+
+
+
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+}
+
+.faqs-whole-container {
+    max-width: 1400px;
+    margin: 50px auto;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex; /* Add display flex to align items horizontally */
+    overflow: hidden; /* Hide overflowing content */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.faqs-whole-container-faq-heading {
+    position: absolute;
+    left: 30%;
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+    color: white;
+    margin-top: 10px;
+    font-family: "Recursive", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+    
+    
+}
+
+
+.faqs-whole-container-content {
+    margin-top: 30px;
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Add padding to content */
+}
+
+.faqs-whole-container-toggle-icon {
+    margin-left: 5px; /* Adjust spacing between question text and icon */
+    float: right;
+}
+
+.faqs-whole-container-image {
+    padding: 20px;
+}
+
+.faqs-whole-container-faq-item {
+    margin-bottom: 20px;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, red, skyblue, purple, pink); /* Apply linear gradient */
+    border-image-slice: 1; /* Ensure the gradient stretches across the entire border */
+    padding-bottom: 20px; /* Added padding to separate questions */
+}
+
+
+.faqs-whole-container-faq-item:last-child {
+    border-bottom: none;
+}
+
+.faqs-whole-container-question {
+    cursor: pointer;
+    font-size: 18px;
+    /*color: #333;*/
+}
+
+.faqs-whole-container-answer {
+    display: none;
+    padding: 10px 0;
+    font-size: 16px;
+    /*color: #666;*/
+}
+
+.faqs-whole-container-image img {
+    width: 500px;
+    height: 450px;
+    display: block;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+
+
+/* Additional CSS for mobile */
+@media screen and (max-width: 450px) {
+    .faqs-whole-container {
+        max-width: 100%;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .faqs-whole-container-faq-heading {
+        left: 22px;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .faqs-whole-container-faq-item {
+        padding: 15px;
+    }
+
+    .faqs-whole-container-image {
+        order: 1;
+    }
+
+    .faqs-whole-container-content {
+        order: 2;
+        
+    }
+    .faqs-whole-container-question{
+        font-size: 15px;
+    }
+
+    .faqs-whole-container-image img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+}
